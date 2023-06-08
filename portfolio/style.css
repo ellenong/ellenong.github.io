@@ -1,0 +1,102 @@
+
+ @import url('https://fonts.googleapis.com/css2?family=Alegreya&family=IBM+Plex+Mono:ital@0;1&family=Inter:wght@300;400;700&family=Syne:wght@700;800&display=swap');
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Inter', sans-serif;
+}
+.slide-left {
+  position: relative;
+  animation: slideFromOutside 1.2s ease-in-out;
+}
+
+@keyframes slideFromOutside {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+.slide-right {
+  position: relative;
+  animation: slideFromOutsideRight 1.2s ease-in-out;
+}
+
+@keyframes slideFromOutsideRight {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+#container1{
+	display: flex;
+	flex-direction: row;
+	padding-top:70px;
+}
+#logo{
+	height:70px;
+	width: auto;
+	padding-left:75px;
+	padding-right: 730px;
+}
+#navbar{
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	align-self: center;
+	justify-content: center;
+	font-family: 'Inter', sans-serif;
+/*	padding-right:75px;*/
+}
+#navbar li{
+	padding-right:20px;
+	padding-left:20px;
+}
+#resume-nav{
+	padding-right: 0px;
+}
+.nav{
+	color: darkslategray;
+	font-size: 1.2em;
+	font-weight: 500;
+}
+.nav:hover{
+	color: darkslategray;
+	text-decoration: none;
+	transform: scale(1.1);
+	font-weight: 700;
+}
+#footer{
+	justify-content: center;
+	font-family: 'Inter', sans-serif;
+	height: 50px;
+	line-height: 50px;
+	font-size: 0.8em;
+	text-align: center;
+	color: #719F71;
+	padding-top: 100px;
+}
+.hamburger-menu {
+  display: none; /* Hide on desktop */
+}
+
+/* Styles for mobile and tablet */
+@media only screen and (max-width: 768px) {
+  #navbar {
+    display: none; /* Hide on mobile and tablet */
+  }
+
+  .hamburger-menu {
+    display: block; /* Show on mobile and tablet */
+    /* Additional styles for the hamburger icon */
+  }
+
+  /* Show the navigation links when the checkbox is checked */
+  #hamburger-checkbox:checked ~ .navbar {
+    display: block;
+  }
+  #navbar {
+  /* Your desktop navigation bar styles */
+  transition: display 0.3s ease-in-out;
+}
