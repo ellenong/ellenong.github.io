@@ -33,9 +33,13 @@
 		margin: 0 auto;
 		padding:100px;
 	}
+	.lightheader{
+		color:#D9D9D9;
+		font-size:0.5em
+	}
 	.header{
 		color: #44444;
-
+		padding-bottom: 40px;
 	}
 	h2{
 		font-weight: bold;
@@ -102,7 +106,7 @@
 	.image-column{
 		padding:20px;
 	}
-	#flow{
+	#section{
 		max-width: 1200px;
 		margin: 0 auto;
 		padding: 100px
@@ -123,12 +127,50 @@
 	.images2{
 		width:330px;
 		height:auto;
-		padding-right:20px;
+		padding-right:10px;
 	}
 	.image-row3{
 		align-content: center;
 		align-content: center;
 		justify-items:center;
+	}
+	#single-header{
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 100px;
+		padding-top:200px;
+		padding-bottom:200px;
+	}
+	.solution{
+		padding-top:50px;
+		max-width: 1200px;		
+	}
+	.gif{
+		justify-self: center;
+		padding-left:40px;
+	}
+	#gif-title{
+		display: flex;
+		flex-direction:row;
+		padding-left:75px;
+		padding-bottom:100px;
+	}
+	.frank-key-features{
+		font-size:2em;
+		padding-right:100px;
+		padding-left:25px;
+	}
+	.lucy-key-features{
+		font-size:2em;
+		padding-right:130px;
+		padding-left:25px;
+	}
+	ol{
+		font-family: 'Inter', sans-serif;
+		font-size: 0.5em;
+		color: #5c5c5c;
+		font-weight: normal;
+		line-height: 2;
 	}
 </style>
 </head>
@@ -174,6 +216,9 @@
 	<hr>
 
 	<div id="problem">
+		<div class ="lightheader">
+			<h6>PROBLEM</h6>
+		</div>
 		<div class ="header">
 			<h2>Living together is difficult</h2>
 		</div>
@@ -185,6 +230,9 @@
 	<hr>
 
 	<div id="research">
+		<div class ="lightheader">
+			<h6>DEFINE</h6>
+		</div>
 		<div class ="header">
 			<h2>What makes living together difficult?</h2>
 		</div>
@@ -232,7 +280,10 @@
 
 	<hr>
 
-	<div id="flow">
+	<div id="section">
+		<div class ="lightheader">
+			<h6>IDEATE</h6>
+		</div>
 		<div class ="header">
 			<h2>Transforming ideas into experiences</h2>
 		</div>
@@ -252,21 +303,32 @@
 				<img  class="image-row" src ="img/lowfidelity.png"  alt="logo">
 			</div>	
 		</div>
+	</div>
 
-		<div>
-			<h5>Putting it to the test</h5>
-			<h6>A Qualtrics survey consisting of 14 questions was developed to test the efficacy of our low fidelity wireframes, aiming to ascertain whether our screens effectively served the intended purpose for our users and identify any design gaps.</h6>
-			<!-- <h5>What did the users say</h5> -->
-			<h6><br><strong>From 35 survey responses we found 3 key insights...</strong></h6>
-			<div class="images">
-				<img  class="image" src ="img/qualtrics2.png"  alt="logo">
-			</div>
+	<hr>
+
+	<div id="section">
+		<div class ="lightheader">
+			<h6>TEST</h6>
+		</div>
+		<div class ="header">
+			<h2>Putting it to the test</h2>
+		</div>
+		<h6>A Qualtrics survey consisting of 14 questions was developed to test the efficacy of our low fidelity wireframes, aiming to ascertain whether our screens effectively served the intended purpose for our users and identify any design gaps.</h6>
+		<!-- <h5>What did the users say</h5> -->
+		<h6><br><strong>From 35 survey responses we found 3 key insights...</strong></h6>
+		<div class="images">
+			<!-- can be tan version qualtrics.png -->
+			<img  class="image" src ="img/qualtrics2.png"  alt="logo">
 		</div>
 	</div>
 
 	<hr>
 
-	<div id="flow">
+	<div id="section">
+		<div class ="lightheader">
+			<h6>PROTOTYPE</h6>
+		</div>
 		<div class ="header">
 			<h2>Back to the drawing board</h2>
 		</div>
@@ -289,28 +351,108 @@
 				<img  class ="images2" src ="img/communication.png"  alt="logo">
 				<img  class ="images2"src ="img/accountability.png"  alt="logo">
 				<img   class ="images2" src ="img/equity.png"  alt="logo">
-
 			</div>
 
 		</div>
 	</div>
 
 	<hr>
-	<div id="flow">
-		<div class ="header">
-			<h2>Confrontation among roommates can be a daunting task. How can we foster an environment that promotes ease and comfort?</h2>
-		</div>
-		<div>
-			<h6>Based on user feedback from a critique session of 20+ participants, the blue color scheme was perceived as having a corporate and serious vibe. Users also expressed apprehension about the potential aggressiveness of the nudge function. The design objective was to create an app experience that felt engaging and enjoyable, devoid of any associations with chores or aggression.</h6>
-		</div>
-		<h5> The solution: blue to orange</h5>
-		<div class ="header">
-			<h2>The cursed dashboard</h2>
-		</div>
-		<div>
-			<h6>Based on user feedback from a critique session of 20 participants, it was identified that the blue color scheme was perceived as having a corporate and serious vibe. Users also expressed apprehension about the potential aggressiveness of the nudge function. The design objective was to create an app experience that felt engaging and enjoyable, devoid of any associations with chores or aggression.</h6>
+
+<!-- 	<div id ="single-header">
+		<div class="header">
+			<h2>Something wasn’t right...</h2>
 		</div>
 	</div>
+
+	<hr> -->
+
+	<div id="section">
+		<div class ="lightheader">
+			<h6>MORE IDEATION</h6>
+		</div>
+		<div class ="header">
+			<h2>Something wasn’t right...<br>So we held a critique session with 20+ participants and found:</h2>
+		</div>
+		<div class="lightheader">
+			<h5><span style="color:#9E9E9E;">Problem 1</span></h5>
+		</div>
+		<div>
+			<h5>Confrontation among roommates can be a daunting task. How can we foster an environment that promotes ease and comfort?</h5>
+			<h6>Based on user feedback from a critique session of 20+ participants, the blue color scheme was perceived as having a corporate and serious vibe. Users also expressed apprehension about the potential aggressiveness of the nudge function. The design objective was to create an app experience that felt engaging and enjoyable, devoid of any associations with chores or aggression.</h6>
+		</div>
+		<div class="lightheader">
+			<h5><span style="color:#9E9E9E;">Problem 2</span></h5>
+		</div>
+		<div>
+			<h5>The cursed dashboard</h5>
+			<h6>Throughout Roomi's journey, the dashboard posed a lot of problems for users. Users felt that certain interfaces on the dashboard were confusing and some were unnecessary. The dashboard is a really important part of Roomi so we wanted to make sure we got it right.</h6>
+		</div>
+	</div>
+
+	<hr>
+
+	<div id="section">
+		<div class ="lightheader">
+			<h6>IMPLEMENTATION</h6>
+		</div>
+		<div class ="header">
+			<h2>Living together is not a chore</h2>
+		</div>
+
+
+		<div class="lightheader">
+			<h5><span style="color:#9E9E9E;">Solution 1</span></h5>
+		</div>
+		<h5>Orange is the new blue</h5>
+		<h6>Playing around with different color schemes and researching color psychology, we completely scrapped the previous color scheme.</h6>
+		<img  class ="image" src ="img/playground.png"  alt="logo">
+		<h6>According to color psychology, <strong>orange is optimistic and uplifting, rejuvenating our spirit</strong>. With the nudge function of Roomi, we wanted to not make living together feel like a chore. </h6>
+		<img  class ="image" src ="img/designguide.png"  alt="logo">
+
+		<div class="lightheader">
+			<h5><span style="color:#9E9E9E;">Solution 2</span></h5>
+		</div>
+		<h5>A/B testing</h5>
+		<h6>Playing around with different color schemes and researching color psychology, we completely scrapped the previous color scheme.</h6>
+		<img  class ="image" src ="img/abtesting.png"  alt="logo">
+
+	</div>
+
+	<hr>
+	<div id="section">
+		<div class ="lightheader">
+			<h6>FINAL DESIGN</h6>
+		</div>
+		<div class ="header">
+			<h2>The final product</h2>
+		</div>
+		<div id="gif-title">
+			<div class ="frank-key-features">
+				<h5>First time user (Frank)</h5>
+				<h6>Key Features</h6>
+				<ol>
+				    <li>Sign up</li>
+				    <li>Share with roommates</li>
+				    <li>Add rooms</li>
+				    <li>Create tasks</li>
+				    <li>View calendar overview of tasks</li>
+  				</ol>
+			</div>
+  			<img class = "gif" src="img/frankprototype.gif" alt="frankprototype" width="300">
+		</div>
+
+		<div id="gif-title">
+			<div class ="lucy-key-features">
+				<h5>Returning user (Lucy)</h5>
+				<h6>Key Features</h6>
+				<ol>
+				    <li>Nudge function (first alert)</li>
+				    <li>Alert function (second alert)</li>
+				    <li>Clear tasks</li>
+  				</ol>
+			</div>
+  			<img class = "gif" src="img/lucyprototype.gif" alt="frankprototype" width="300">
+		</div>
 
 		<div id ="footer">
 		Ellen Ong &copy;2023	
