@@ -81,12 +81,6 @@ h1, h2, h3, h4, h5, h6{
   display: none; /* Hide on desktop */
 }
 
-/* Styles for mobile and tablet */
-@media only screen and (max-width: 768px) {
-  #navbar {
-    display: none; /* Hide on mobile and tablet */
-  }
-
   .hamburger-menu {
     display: block; /* Show on mobile and tablet */
     /* Additional styles for the hamburger icon */
