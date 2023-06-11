@@ -1,5 +1,5 @@
 
- @import url('https://fonts.googleapis.com/css2?family=Alegreya&family=IBM+Plex+Mono:ital@0;1&family=Inter:wght@300;400;700&family=Syne:wght@700;800&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Syne:wght@700;800&display=swap');
 h1, h2, h3, h4, h5, h6{
 	font-family: 'Inter', sans-serif;
 }
@@ -59,13 +59,13 @@ h1, h2, h3, h4, h5, h6{
 .nav{
 	color: darkslategray;
 	font-size: 1.2em;
-	font-weight: 500;
+	font-weight: 300;
 }
 .nav:hover{
 	color: darkslategray;
 	text-decoration: none;
 	transform: scale(1.1);
-	font-weight: 700;
+	font-weight: 400;
 }
 #footer{
 	justify-content: center;
