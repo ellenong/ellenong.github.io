@@ -1,146 +1,237 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>LuxSpeaker - Case Study</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f6f6f6;
-      margin: 0;
-      padding: 30px;
-    }
-
-    h1 {
-      color: #333;
-      font-size: 28px;
+  <title>Ellen Ong | Portfolio</title>
+  <meta name="description" content="This is the case study for my app Roomi. On this page, I give a summary of this project like the problem, process, and solution.">
+  <link rel="icon" type="image/png" href="img/logo.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+<style>
+  body{
+    background-color: white;
+    color: black;
+    font-family: 'Inter', sans-serif;
+  }
+  hr{
+    max-width: 1200px;
+    border-width:2px;
+  }
+  #cover{
+    width: 1200px;
+    padding:25px;
+  }
+  #container2{
+    justify-content: center;
+    align-items: center;
       text-align: center;
-    }
+      padding-top: 75px;
+  }
+  #overview {
+    display: flex;
+    flex-direction:row;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding:100px;
+  }
+  .lightheader{
+    color:#D9D9D9;
+    font-size:0.5em
+  }
+  .header{
+    color: #44444;
+    padding-bottom: 40px;
+  }
+  h2{
+    font-weight: bold;
+  }
+  .column{
+    padding: 50px;
+  }
+/* mini header */
+  h5{
+    color: #88888;
+    font-weight: 700;
+  }
+/* paragraph */
+  h6{
+    color: #5c5c5c
+  }
+  #problem{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px;
+  }
+  .image{
+    height: 300px;
+    width: auto;
+    padding-top:30px;
+  }
+  #research{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding:100px;
+  }
+  .text{
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .text-column{
+    padding: 25px;
+    color:black;
+    font-weight: 700;
+  }
+  .image{
+    width:1000px;
+    height:auto;
+    padding-bottom:50px;
+  }
+  .image-row{
+    width:500px;
+    height:auto;
+    padding-bottom:50px;
+  }
+  .images{
+    align-content: center;
+  }
+  .image-row{
+    align-content: center;
+    display:flex;
+    flex-direction:row;
+    align-self: center;
+  }
+  .image-column{
+    padding:20px;
+  }
+  #section{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px
+  }
+  .text-image{
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    justify-items: center;
 
-    h2 {
-      color: #555;
-      font-size: 22px;
-      margin-top: 40px;
-    }
-
-    p {
-      color: #777;
-      font-size: 16px;
-      line-height: 1.6;
-      margin-bottom: 20px;
-    }
-
-    .section {
-      margin-bottom: 40px;
-    }
-
-    .highlight {
-      color: #333;
-      font-weight: bold;
-    }
-
-    .features-list {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      margin-top: 20px;
-    }
-
-    .feature {
-      width: 48%;
-      padding: 20px;
-      background-color: #fff;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      margin-bottom: 20px;
-    }
-
-    .feature h3 {
-      color: #555;
-      font-size: 18px;
-      margin-top: 0;
-      margin-bottom: 10px;
-    }
-
-    .feature p {
-      color: #777;
-      font-size: 14px;
-    }
-
-    .result {
-      margin-top: 40px;
-    }
-
-    .result img {
-      display: block;
-      max-width: 100%;
-      margin: 0 auto;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-  </style>
+  }
+  .textimage-column{
+    color:black;
+    font-weight: 700;
+    align-content:center;
+    padding: 10px;
+  }
+  .images2{
+    width:330px;
+    height:auto;
+    padding-right:10px;
+  }
+  .image-row3{
+    align-content: center;
+    align-content: center;
+    justify-items:center;
+  }
+  #single-header{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px;
+    padding-top:200px;
+    padding-bottom:200px;
+  }
+  .solution{
+    padding-top:50px;
+    max-width: 1200px;    
+  }
+  .gif{
+    justify-self: center;
+    padding-left:40px;
+  }
+  #gif-title{
+    display: flex;
+    flex-direction:row;
+    padding-left:75px;
+    padding-bottom:100px;
+  }
+  .frank-key-features{
+    font-size:2em;
+    padding-right:100px;
+    padding-left:25px;
+  }
+  .lucy-key-features{
+    font-size:2em;
+    padding-right:130px;
+    padding-left:25px;
+  }
+  ol{
+    font-family: 'Inter', sans-serif;
+    font-size: 0.5em;
+    color: #5c5c5c;
+    font-weight: normal;
+    line-height: 2;
+  }
+</style>
 </head>
 <body>
-  <h1>LuxSpeaker - Redefining Smart Speaker Design</h1>
-
-  <div class="section">
-    <h2>Overview</h2>
-    <p>LuxSpeaker is a cutting-edge smart speaker that combines advanced audio technology with a minimalist and elegant design. The goal of this product design project was to create a visually appealing speaker that seamlessly integrates into modern living spaces while delivering exceptional audio performance.</p>
+  <div id="container1">
+    <div>
+      <a href="index.html">
+        <img  id="logo" src ="img/logo.png"  alt="logo">
+      </a>
+    </div>
+    <ul id ="navbar">
+      <li><a  class="nav" href="index.html">Projects</a></li>
+      <li><a class ="nav" href="about.html">About</a></li>
+      <li><a  class ="nav" id = "resume-nav" href="https://drive.google.com/file/d/1T48dx5LBxR4K8vMQYgH22TQdc7DfQh33/view?usp=share_link" target="_blank">Resume</a></li>
+      <!-- <li><a class ="nav" href="contact.php">Contact</a></li> -->
+    </ul>
   </div>
 
-  <div class="section">
-    <h2>Project Objectives</h2>
-    <ol>
-      <li><span class="highlight">Design a sleek and minimalist smart speaker</span> that blends with various interior styles.</li>
-      <li><span class="highlight">Develop a user-friendly interface</span> for intuitive controls and seamless connectivity.</li>
-      <li><span class="highlight">Ensure high-quality audio performance</span> and a superior listening experience.</li>
-      <li><span class="highlight">Use sustainable materials and manufacturing processes</span> to promote eco-friendliness.</li>
-    </ol>
+  <div id="container2">
+    <img  id="cover" src ="img/lollaland2.png" alt="logo">
   </div>
 
-  <div class="section">
-    <h2>Research and Inspiration</h2>
-    <p>In the initial research phase, we analyzed market trends, conducted user surveys, and studied existing smart speakers. We discovered that many available options lacked a refined design aesthetic, often appearing clunky and obtrusive in home environments. Our team drew inspiration from architectural minimalism, incorporating clean lines, geometric shapes, and a muted color palette to create an understated yet sophisticated speaker.</p>
-  </div>
-
-  <div class="section">
-    <h2>Design Process</h2>
-    <ol>
-      <li><span class="highlight">Ideation:</span> Through brainstorming sessions and sketching, we explored various design concepts, focusing on simplicity and elegance. We prioritized a compact form factor to enhance portability and flexibility in placement.</li>
-      <li><span class="highlight">3D Modeling:</span> After selecting the most promising design direction, we created digital 3D models using CAD software. This allowed us to refine the shape, dimensions, and angles, ensuring the optimal balance between aesthetics and acoustic performance.</li>
-      <li><span class="highlight">Material Selection:</span> We sought sustainable materials to align with our eco-friendly objectives. The LuxSpeaker features a sleek aluminum casing with a brushed finish, providing a premium look while minimizing environmental impact.</li>
-      <li><span class="highlight">Interface Design:</span> The control interface employs a touch-sensitive panel on the top surface, seamlessly integrated into the speaker's design. A minimalist LED display subtly indicates the speaker's status and volume levels, ensuring an intuitive user experience.</li>
-      <li><span class="highlight">Prototyping:</span> To validate our design choices, we created physical prototypes using rapid prototyping techniques. This iterative process allowed us to evaluate ergonomics, test audio quality, and make necessary adjustments.</li>
-      <li><span class="highlight">Manufacturing:</span> We partnered with a responsible manufacturer known for sustainable practices. Our choice ensured ethical sourcing, minimized waste, and employed eco-friendly production methods, including energy-efficient manufacturing and recyclable packaging.</li>
-    </ol>
-  </div>
-
-  <div class="section">
-    <h2>Key Features</h2>
-    <div class="features-list">
-      <div class="feature">
-        <h3>Aesthetics</h3>
-        <p>LuxSpeaker's sleek and minimalist design, featuring clean lines and a brushed aluminum finish, harmonizes with any interior décor.</p>
-      </div>
-      <div class="feature">
-        <h3>Acoustic Excellence</h3>
-        <p>The speaker utilizes advanced audio technology to deliver immersive sound quality and clear voice recognition, enhancing the overall listening experience.</p>
-      </div>
-      <div class="feature">
-        <h3>User-Friendly Interface</h3>
-        <p>The touch-sensitive control panel and LED display provide effortless control and seamless integration with voice assistants, enabling users to effortlessly manage music playback and smart home devices.</p>
-      </div>
-      <div class="feature">
-        <h3>Wireless Connectivity</h3>
-        <p>LuxSpeaker supports seamless wireless connectivity via Bluetooth and Wi-Fi, allowing users to stream music from their preferred devices or access online streaming services.</p>
-      </div>
-      <div class="feature">
-        <h3>Eco-Friendly Construction</h3>
-        <p>The LuxSpeaker is built using sustainable materials and manufacturing processes, ensuring minimal environmental impact without compromising on quality.</p>
-      </div>
+  <div id="overview">
+    <div class ="header">
+      <h2>Lollaland</h2>
+    </div>
+    <div class = "column">
+      <h5>Background</h5>
+      <h6>Lollaland is a baby product company that has been featured on Shark Tank. They are well known for their iconic sippycup, Lollacup. Their website allows customers to online shop from their wide array of projects and learn more about their products.</h6>
+      <h5>Project</h5>
+      <h6>Solo project for Lollaland. Over the course of the project, I conducted extensive research, designed and prototyped, and presented to stakeholders.</h6>
+    </div>
+    <div class = "column">
+      <h5>My Role</h5>
+      <h6>Lead UX Designer </h6>
+      <h5>Tools</h5>
+      <h6>Figma, Qualtrics, User Interviews, User Personas, A/B Testing, Journey Map, Affinity Mapping, Prototyping, Usability Testing</h6>
     </div>
   </div>
 
-  <div class="section result">
-    <h2>Result</h2>
-    <img src="luxspeaker.jpg" alt="LuxSpeaker" />
+  <hr>
+
+  <div id="problem">
+    <div class ="lightheader">
+      <h6>IN PROGRESS</h6>
+    </div>
+    <div class ="header">
+      <h2>Good things are coming...</h2>
+    </div>
+    <div>
+      <h6>This is an ongoing project. Check back soon for finalized case study!</h6>
+    </div>
+  </div>
+
+  <hr>
+
+
+
+
+    <div id ="footer">
+    Ellen Ong &copy;2023  
   </div>
 </body>
 </html>
