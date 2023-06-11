@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Ellen Ong | Portfolio</title>
+	<meta name="description" content="This is the home page of my website where it shows a quick introduction about myself and my projects.">
+	<link rel="icon" type="image/png" href="img/logo.png">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+	<style>
+		body{
+			background-color: white;
+		}
+		#projects{
+			padding-left: 75px;
+		}
+		#intro{
+			font-family: 'Inter', sans-serif;
+			padding-right: 200px;
+			color: #E7CAAD;
+			line-height: 40px;
+			font-weight: 700;
+			padding-top: 125px;
+			padding-bottom: 10px;
+		}
+		#description{
+			font-family: 'Inter', sans-serif;
+			padding-right: 80px;
+			color: darkslategray;
+			font-weight: 400;
+			padding-left: 50px;
+		}
+		#container2{
+			display:flex;
+			flex-direction: row;
+			padding-left: 125px;
+			padding-bottom: 75px;
+			color: #E9E9E9;
+			line-height: 70px;
+			font-family: 'Syne', sans-serif;
+		}
+		#about-img{
+			height: 500px;
+			width: auto;
+			padding-right: 15px;
+			padding-top: 0px;
+		}
+
+		#container3{
+			display:flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		#container4{
+			justify-content: center;
+			font-family: 'Syne', sans-serif;
+			height: 50px;
+			line-height: 50px;
+			font-size: 0.8em;
+			text-align: center;
+		}
+		.thumbnails{
+			height: 100%;
+			width: 100%;
+
+		}
+		.project-title{
+			padding-top: 20px;
+			padding-left: 25px;
+			color: darkslategray;
+		}
+		.project-description{
+			color: slategray;
+		}
+		.image-button {
+			width: 600px;
+			height: auto;
+			padding: 20px;
+			background-color: white;
+			position: relative;
+			display: inline-block;
+			overflow: hidden;
+			cursor: pointer;
+			border: none;
+			outline: none;
+		}
+
+		.image-button img {
+		  display: block;
+		  width: 100%;
+		  height: auto;
+		  transition: all 0.3s ease-in-out;
+		}
+
+		.image-button:hover img {
+		  filter: brightness(70%);
+		}
+		.image-button:active {
+		  border: none; /* remove border when clicked */
+		}
+
+		.button-text {
+		  position: absolute;
+		  top: 40%;
+		  left: 50%;
+		  transform: translate(-50%, -50%);
+		  font-size: 1.5rem;
+		  font-weight: 500;
+		  color: white;
+		  opacity: 0;
+		  transition: opacity 0.3s ease-in-out;
+		  font-family: 'Inter', sans-serif;
+		}
+
+		.image-button:hover .button-text {
+		  opacity: 1;
+		  color: white;
+		  font-weight: 700;
+		}
+		.my-button {
+		  display: inline-block;
+		  padding: 10px 20px;
+		  background-color: #007bff;
+		  color: #fff;
+		  border: none;
+		  border-radius: 5px;
+		  text-decoration: none;
+		  font-size: 16px;
+		  cursor: pointer;
+}
+
+	</style>
+</head>
+<body>
+	<div id="container1">
+		<div>
+			<a href="index.html">
+				<img  id="logo" src ="img/logo.png"  alt="logo">
+			</a>
+		</div>
+		<div>
+			<ul id ="navbar">
+				<li><a class ="nav" href="#container3">Projects</a></li>
+				<li><a class ="nav" href="about.html">About</a></li>
+				<li><a class ="nav" id = "resume-nav" href="https://drive.google.com/file/d/1T48dx5LBxR4K8vMQYgH22TQdc7DfQh33/view?usp=share_link" target="_blank">Resume</a></li>
+				<!-- <li><a class ="nav" id ="contact-nav" href="contact.php">Contact</a></li> -->
+			</ul>
+		</div>
+	</div>
+
+	<div id="container2">
+		<div>
+			<h1 id = "intro" class ="slide-right"><strong><span style="color:#719F71;">👋 Hi I'm Ellen Ong!</span></strong></span></h1>
+			<h3 id = "description" class ="slide-right">Product designer by day,<br>fashion enthusiast by night, &<br>research junkie all the time.</h3>
+		</div>
+		<div>
+			<img id = "about-img" class = "slide-left" src ="img/m32.png" alt="about">
+		</div>
+	</div>
+	<div id ="container3">
+		<div class="image-button">
+		    <a href="roomi.html">
+		        <img class="thumbnails" src="img/roomi.png" alt="your-image-alt-text-here">
+		        <span class="button-text">Roomi</span>
+		    </a>
+		    <div class = "project-title">
+			    <h3>Roomi</h3>
+			    <div class ="project-description">
+			    	<h6>App that makes living together easy.</h6>
+				</div>
+			</div>
+		</div>
+		<div class="image-button">
+			<a href = "lollaland.html">
+			 	<img class ="thumbnails" src ="img/lollaland2.png" alt="your-image-alt-text-here">
+			  	<span class="button-text">Lollaland</span>
+		  	</a>
+		    <div class = "project-title">
+			    <h3>Lollaland</h3>
+			    <div class ="project-description">
+			    	<h6>Redesign of a baby product website.</h6>
+				</div>
+			</div>
+		</div>
+		<div class="image-button">
+			<a href = "tutoria.html">
+			 	<img class ="thumbnails" src ="img/tutoria.png" alt="your-image-alt-text-here">
+			  	<span class="button-text">Tutoria</span>
+		  	</a>
+		    <div class = "project-title">
+			    <h3>Tutoria</h3>
+			    <div class ="project-description">
+			    	<h6>Helping tutors manage their clients.</h6>
+				</div>
+			</div>
+		</div>
+		<div class="image-button">
+			<a>
+				 <img class ="thumbnails" src ="img/coming.png" alt="your-image-alt-text-here">
+				 <span class="button-text">More coming soon</span>
+			</a>
+		</div>
+<!-- 		<div class="image-button">
+			<a href = "lollaland.html">
+			  	<img   class ="thumbnails" src ="img/coming.png" alt="your-image-alt-text-here">
+			  	<span class="button-text">Coming Soon</span>
+			  </a>
+		</div> -->
+	</div>
+	<div id ="footer">
+		Ellen Ong &copy;2023	
+	</div>
+</body>
+</html>
