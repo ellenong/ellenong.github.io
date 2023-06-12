@@ -77,23 +77,26 @@ h1, h2, h3, h4, h5, h6{
 	padding-top: 130px;
 	padding-bottom: 130px;
 }
+	.rounded-button {
+	  border-radius: 10px;
+	  padding: 30px 20px;
+	  background-color: GRAY;
+	  color: #fff;
+	  border: none;
+	  text-decoration: none;
+	  font-size: 12px;
+	  cursor: pointer;
+	  text-align: center;
+	  font-family: 'Inter', sans-serif;
+	  
+	  /* Align the button to the center */
+	  float: right;
+	}
+	.rounded-button:hover{
+		text-decoration: none;
+		color:BLACK;;
+	}
 #footer-name{
 		color: #AAC5AA;
 }
-.hamburger-menu {
-  display: none; /* Hide on desktop */
-}
 
-  .hamburger-menu {
-    display: block; /* Show on mobile and tablet */
-    /* Additional styles for the hamburger icon */
-  }
-
-  /* Show the navigation links when the checkbox is checked */
-  #hamburger-checkbox:checked ~ .navbar {
-    display: block;
-  }
-  #navbar {
-  /* Your desktop navigation bar styles */
-  transition: display 0.3s ease-in-out;
-}
