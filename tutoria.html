@@ -103,6 +103,8 @@
 		display:flex;
 		flex-direction:row;
 		align-self: center;
+		height:600px;
+		width:auto;
 	}
 	.image-column{
 		padding:20px;
@@ -122,8 +124,9 @@
 	.textimage-column{
 		color:black;
 		font-weight: 700;
-		align-content:center;
 		padding: 10px;
+		margin-right:auto;
+		margin-left:auto;
 	}
 	.images2{
 		width:330px;
@@ -210,6 +213,8 @@
 		<div class = "column">
 			<h5>My Role</h5>
 			<h6>Lead UX Designer</h6>
+			<h5>Timeline</h5>
+			<h6>2 months</h6>
 			<h5>Tools</h5>
 			<h6>Figma, User Interviews, A/B Testing, Journey Map, Affinity Mapping, Prototyping, Usability Testing</h6>
 		</div>
@@ -236,7 +241,8 @@
 		<div class ="header">
 			<h2>The current match report designs are difficult to digest.</h2>
 		</div>
-		<h6>I hypothesized that the current designs were overwhelming and confusing for tutors to digest and that tutors can not differentiate between their match requests and their matches.</h6>
+		<h6>I hypothesized that the current designs were overwhelming and confusing for tutors to digest. I also hypothesize that tutors can not differentiate between their match requests and their matches because they are presented in one page and it requires tutors to go through a edit and save process to match with clients.</h6>
+		<img  class="image" src ="img/currentflow.png"  alt="logo">
 	</div>
 
 	<hr>
@@ -268,253 +274,53 @@
 			<h6>PROBLEM</h6>
 		</div>
 		<div class ="header">
-			<h2>Managing numerous clients is a headache</h2>
+			<h2>Tracking and effectively managing can be an uphill battle.</h2>
 		</div>
 		<div>
-			<h6>Volunteer tutors find it difficult to manage and track their matches and match requests with the current match report design. How can we provide this information in one place while making the information easily digestible for the volunteer tutors?</h6>
+			<h6>Volunteer tutors find it difficult to manage and manage their matches and match requests with the current match report design. How can we provide this information in one place while making the information easily digestible for the volunteer tutors?</h6>
 		</div>
 		<div>
 			<h5><br>Problems with the current design</h5>
-			<h6><strong>1. Information and sensory overload </strong>- The current design uses high contrast colors and homogenous font hierarchy to indicate to the tutors statuses of different aspects of their relationship with the client. This is all laid out in rows after each other, 4 out of 5 users found this to be confusing and overwhelming.</h6>
-			<h6><strong>2. Unclear purpose </strong>- Users wondered what each status meant. There is a disconnect between the designs and their purpose that is preventing tracking and managing an easy process for tutors</h6>
+			<h6><span style="font-weight:600">1. Information and sensory overload </span>- The current design uses high contrast colors and homogenous font hierarchy to indicate to the tutors statuses of different aspects of their relationship with the client. This is all laid out in rows after each other, 4 out of 5 users found this to be confusing and overwhelming.</h6>
+			<h6><span style="font-weight:600">2. Unclear purpose </span>- Users wondered what each status meant. There is a disconnect between the designs and their purpose that is preventing tracking and managing an easy process for tutors</h6>
+			<h6><span style="font-weight:600">3. Confusion</span> - With the current layout, tutors are unsure what requires action.</h6>
+		</div>
+		<div>
+			<img  class="image" src ="img/problems.png"  alt="logo">
 		</div>
 
 	</div>
 
 	<hr>
 
-	<div id="research">
-		<div class ="lightheader">
-			<h6>DEFINE</h6>
-		</div>
-		<div class ="header">
-			<h2>What makes living together difficult?</h2>
-		</div>
-		<div>
-			<h6>To pinpoint what specifically made living with others difficult, we carefully crafted 8 research questions to understand users’ living situation, living preferences, and conflict resolution tactics. We conducted 5 user interviews with college students between the ages of 18-22. </h6>
-		</div>
-		<div class ="text">
-			<div class ="text-column" >
-				<h6>“I dont think it’s fair right now because not everyone is contributing with chores”<br><br>“I wish I had a set schedule of when to do chores rather than doing it whenever”<br><br>“I am a non confrontational person. It bothers me, but I rather do the chores rather than make it a big deal”</h6>
-			</div>
-			<div class="text-column">
-				<h6>“I am very grateful that my roommates does most of chores, I do like 10%”<br><br>“I don’t think my roommate minds doing the chores”<br><br>“I tend to forget to pick up after myself, I do feel bad that my housemate usually cleans up after me."</h6>
-			</div>
-		</div>
-		<div>
-			<h5>Finding 1. The patterns</h5>
-			<h6>From all the qualitative interview responses we collected, we created an affinity map to categorize the answers into general statements. Based on the general categories that had the most related responses, we found 3 things that users wanted to improve their living situations: Communication, Accountability, and Equity.</h6>
-			<div class="images">
-				<img  class="image" src ="img/affinitymap.png"  alt="logo">
-			</div>
-		</div>
-			<h5>Finding 2. The two types of roommates</h5>
-			<h6>From all the answers we collected, we found there were two types of roommates and some in between. We created 2 user personas to represent the target users of Roomi: Frustrated Frank and Lazy Lucy.</h6>
-			<div class ="image-row">
-				<div class ="image-column" >
-					<div class="images">
-						<img  class="image-row" src ="img/frank.png"  alt="logo">
-					</div>
-					<div>
-						<h5>Walking in Frank's shoes</h5>
-						<h6>Frank is a USC student living in an off-campus apartment with 3 of his best friends. Frank realizes that his living style is different from his friends’ and is tired of reminding his friends to clean up after themselves. He's resorted to doing all the chores himself to avoid escalating the situation. Frank needs <strong>a way to effectively communicate </strong>what chores should be done while ensuring that his <strong>roommates are held accountable for their share of work.<strong></h6>
-					</div>
-				</div>
-				<div class ="image-column" >
-					<div class="images">
-						<img  class="image-row" src ="img/lucy.png"  alt="logo">
-					</div>
-					<div>
-						<h5>Walking in Lucy's shoes</h5>
-						<h6>Lucy, a sophomore at NYU, is living with her friends in off-campus housing. This is her first time living alone so she does her best to remember her responsibilities, but often forgets to clean up after herself due to her busy schedule. As a result, she’s noticed that she’s grown distant from her housemates and they seem to regularly be upset with her. Lucy needs <strong>a better technique to remember </strong>what chores to complete, and thus <strong>maintain peace </strong>among her household.</h6>
-					</div>
-				</div>
-		</div>
-	</div>
-
-	<hr>
-
-	<div id="section">
+	<div id ="section">
 		<div class ="lightheader">
 			<h6>IDEATE</h6>
 		</div>
 		<div class ="header">
-			<h2>Transforming ideas into experiences</h2>
+			<h2>Crafting designs that are easily comprehensible for the tutors</h2>
 		</div>
-
-		<div>
-			<h5>User flows</h5>
-			<h6>Keeping the patterns and types of users in mind, we started drafting the user flows that would prioritize communication, accountability, and equity while serving our two target users.</h6>
-			<img  class="image" src ="img/userflow.png"  alt="user flow">
-		</div>
-<!-- text with image to the right -->
+		<h5>The updated match card</h5>
 		<div class ="text-image">
-			<div class= "textimage-column">
-				<h5>Low fidelity wireframes</h5>
-				<h6>The user flows were transformed into low fidelity prototypes to encompass the experiences of both <strong>first-time users</strong> (Frank) and <strong>returning users</strong> (Lucy).<br><br>For first-time users, the journey begins with a sign-up screen and an onboarding survey to gather data on living styles. They are then directed to the dashboard, where they can initiate the creation of tasks that are then added to their to-do list and calendar.<br><br>To demonstrate the experience of returning users, such as Lucy, we introduced the nudge function, which serves as a reminder for users to complete their tasks through push notifications.</h6>
-			</div>
 			<div class="textimage-column">
-				<img  class="image-row" src ="img/lowfidelity.png"  alt="logo">
+				<img  class="image-row" src ="img/changecard.png"  alt="logo">
+			</div>	
+			<div class="textimage-column">
+				<img  class="image-row" src ="img/changes.png"  alt="logo">
 			</div>	
 		</div>
-	</div>
-
-	<hr>
-
-	<div id="section">
-		<div class ="lightheader">
-			<h6>TEST</h6>
-		</div>
-		<div class ="header">
-			<h2>Putting it to the test</h2>
-		</div>
-		<h6>A Qualtrics survey consisting of 14 questions was developed to test the efficacy of our low fidelity wireframes, aiming to ascertain whether our screens effectively served the intended purpose for our users and identify any design gaps.</h6>
-		<!-- <h5>What did the users say</h5> -->
-		<h6><br><strong>From 35 survey responses we found 3 key insights...</strong></h6>
-		<div class="images">
-			<!-- can be tan version qualtrics.png -->
-			<img  class="image" src ="img/qualtrics2.png"  alt="logo">
-		</div>
-	</div>
-
-	<hr>
-
-	<div id="section">
-		<div class ="lightheader">
-			<h6>PROTOTYPE</h6>
-		</div>
-		<div class ="header">
-			<h2>Back to the drawing board</h2>
-		</div>
-		<div class ="text-image">
-			<div class= "textimage-column">
-				<h5>Establishing a design system</h5>
-				<h6>When brainstorming for a color scheme, we wanted to maintain the core values of our app (communication, accountability, and equity) while keeping the app fun and lively for the users. Shades of blue were chosen as our primary and secondary color because according to color psychology, blue is said to promote <strong>reliability, responsibility and calmness.</strong></h6>
-			</div>
-			<div class="textimage-column">
-				<img  class="images2" src ="img/typography.png"  alt="logo">
-			</div>
-			<div class="textimage-column">
-				<img  class="images2" src ="img/colors.png"  alt="logo">
-			</div>		
-		</div>
+		<h5>Differentiation between matches and match requests</h5>
 		<div>
-			<h5>Elevating the experience</h5>
-			<h6>By incorporating the insights gathered from past user research and the Qualtrics survey as well as leveraging the established design system, the low fidelity wireframes underwent a transformative refinement process, resulting in the creation of high-fidelity wireframes.</h6>
-			<div class="image-row3">
-				<img  class ="images2" src ="img/communication.png"  alt="logo">
-				<img  class ="images2"src ="img/accountability.png"  alt="logo">
-				<img   class ="images2" src ="img/equity.png"  alt="logo">
-			</div>
-
-		</div>
+			<img  class="image" src ="img/changematchrequest.png"  alt="logo">
 	</div>
+
+
 
 	<hr>
 
-<!-- 	<div id ="single-header">
-		<div class="header">
-			<h2>Something wasn’t right...</h2>
-		</div>
-	</div>
-
-	<hr> -->
-
-	<div id="section">
-		<div class ="lightheader">
-			<h6>MORE IDEATION</h6>
-		</div>
-		<div class ="header">
-			<h2>Something wasn’t right...<br>So we held a critique session with 20+ participants and found:</h2>
-		</div>
-		<div class="lightheader">
-			<h5><span style="color:#9E9E9E;">Problem 1</span></h5>
-		</div>
-		<div>
-			<h5>Confrontation among roommates can be a daunting task. How can we foster an environment that promotes ease and comfort?</h5>
-			<h6>Based on user feedback from a critique session of 20+ participants, the blue color scheme was perceived as having a corporate and serious vibe. Users also expressed apprehension about the potential aggressiveness of the nudge function. The design objective was to create an app experience that felt engaging and enjoyable, devoid of any associations with chores or aggression.</h6>
-		</div>
-		<div class="lightheader">
-			<h5><span style="color:#9E9E9E;">Problem 2</span></h5>
-		</div>
-		<div>
-			<h5>The cursed dashboard</h5>
-			<h6>Throughout Roomi's journey, the dashboard posed a lot of problems for users. Users felt that certain interfaces on the dashboard were confusing and some were unnecessary. The dashboard is a really important part of Roomi so we wanted to make sure we got it right.</h6>
-		</div>
-	</div>
-
-	<hr>
-
-	<div id="section">
-		<div class ="lightheader">
-			<h6>IMPLEMENTATION</h6>
-		</div>
-		<div class ="header">
-			<h2>Living together is not a chore</h2>
-		</div>
 
 
-		<div class="lightheader">
-			<h5><span style="color:#9E9E9E;">Solution 1</span></h5>
-		</div>
-		<h5>Orange is the new blue</h5>
-		<h6>Playing around with different color schemes and researching color psychology, we completely scrapped the previous color scheme.</h6>
-		<img  class ="image" src ="img/playground.png"  alt="logo">
-		<h6>According to color psychology, <strong>orange is optimistic and uplifting, rejuvenating our spirit</strong>. With the nudge function of Roomi, we wanted to not make living together feel like a chore. </h6>
-		<img  class ="image" src ="img/designguide.png"  alt="logo">
-
-		<div class="lightheader">
-			<h5><span style="color:#9E9E9E;">Solution 2</span></h5>
-		</div>
-		<h5>A/B testing</h5>
-		<h6>Playing around with different color schemes and researching color psychology, we completely scrapped the previous color scheme.</h6>
-		<img  class ="image" src ="img/abtesting.png"  alt="logo">
-
-	</div>
-
-	<hr>
-	<div id="section">
-		<div class ="lightheader">
-			<h6>FINAL DESIGN</h6>
-		</div>
-		<div class ="header">
-			<h2>The final product</h2>
-		</div>
-		<div id="gif-title">
-			<div class ="frank-key-features">
-				<h5>First time user (Frank)</h5>
-				<h6>Key Features</h6>
-				<ol>
-				    <li>Sign up</li>
-				    <li>Share with roommates</li>
-				    <li>Add rooms</li>
-				    <li>Create tasks</li>
-				    <li>View calendar overview of tasks</li>
-  				</ol>
-			</div>
-  			<img class = "gif" src="img/frankprototype.gif" alt="frankprototype" width="300">
-		</div>
-
-		<div id="gif-title">
-			<div class ="lucy-key-features">
-				<h5>Returning user (Lucy)</h5>
-				<h6>Key Features</h6>
-				<ol>
-				    <li>Nudge function (first alert)</li>
-				    <li>Alert function (second alert)</li>
-				    <li>Clear tasks</li>
-  				</ol>
-			</div>
-  			<img class = "gif" src="img/lucyprototype.gif" alt="frankprototype" width="300">
-		</div>
-
-		<div id="section">
-			<div class ="header">
-				<h2>Key Takeaways</h2>
-			</div>
-			<h6><strong>1. Advocating for the users </strong>- Within the organization, I observed that the founder had a significant influence on design decisions. Utilizing my research skills became crucial in defending my design choices and advocating for the needs of the users, ensuring that they came first throughout the design process.</h6>
-			<h6><br><strong>2. Working with limited resources </strong>– Working within a non-profit organization, I encountered challenges in implementing design changes due to limitations with what can be developed and what couldn’t. There were also limited resources on recruiting participants and conducting user research. However, this experience taught me the importance of embracing creativity to overcome these obstacles and find alternative solutions.</h6>
-		</div>
+	
 
 		<div id ="footer">
 			<h2 id="footer-name">ellen ong</h2>
