@@ -22,6 +22,12 @@
 			font-size: 4.2em;
 		}
 		.intro .text-wrapper {
+		  opacity: 0;
+		}
+		.intoro .punctuation{
+			opacity:0;
+		}
+		.intro .text-wrapper {
 		  position: relative;
 		  display: inline-block;
 		  padding-top: 0.1em;
@@ -167,7 +173,7 @@
 		  font-size: 16px;
 		  cursor: pointer;
 		}
-		@media (max-width: 992px ) {
+		@media (max-width: 1200px ) {
 
 
 			#container2 {
@@ -220,10 +226,10 @@
 
 	<div id="container2">
 		<div id = "intro">
-			<p class ="intro slide-right">
+			<p class ="intro">
 				<span class="text-wrapper">
 					<span class="line line1"></span>
-					<span class="letters" style = "font-weight:700">Hi I'm Ellen Ong!</span>
+					<span class="letters" style = "font-weight:700">Hi I'm Ellen Ong</span>
 				</span>
 			</p>
 			<h6 id ="small-details" class ="slide-right">Based in Los Angeles | UX Designer @ Tutoria</span></h6>
@@ -292,38 +298,51 @@
 	</div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 	<script>
-		var textWrapper = document.querySelector('.intro .letters');
-		textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
+	  var textWrapper = document.querySelector('.intro .text-wrapper');
+	  textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
 
-		anime.timeline({loop: false})
-		  .add({
-		    targets: '.intro .line',
-		    scaleY: [0,1],
-		    opacity: [0.5,1],
-		    easing: "easeOutExpo",
-		    duration: 700
-		  })
-		  .add({
-		    targets: '.intro .line',
-		    translateX: [0, document.querySelector('.intro .letters').getBoundingClientRect().width + 10],
-		    easing: "easeOutExpo",
-		    duration: 700,
-		    delay: 100
-		  }).add({
-		    targets: '.intro .letter',
-		    opacity: [0,1],
-		    easing: "easeOutExpo",
-		    duration: 600,
-		    offset: '-=775',
-		    delay: (el, i) => 34 * (i+1)
-		  }).add({
-		    targets: '.ml11',
-		    opacity: 0,
-		    duration: 1000,
-		    easing: "easeOutExpo",
-		    delay: 1000
-		  });
-		  ;
+	  anime.timeline({ loop: false })
+	    .add({
+	      targets: '.intro .line',
+	      scaleY: [0, 1],
+	      opacity: [0.5, 1],
+	      easing: "easeOutExpo",
+	      duration: 1000
+	    })
+	    .add({
+	      targets: '.intro .line',
+	      translateX: [0, document.querySelector('.intro .text-wrapper').getBoundingClientRect().width + 10],
+	      easing: "easeOutExpo",
+	      duration: 700,
+	      delay: 300
+	    }).add({
+	      targets: '.intro .letter',
+	      opacity: [0, 1],
+	      easing: "easeOutExpo",
+	      duration: 600,
+	      offset: '-=300',
+	      delay: (el, i) => 34 * (i + 1)
+	    }).add({
+	      targets: '.intro .punctuation',
+	      opacity: [0, 1],
+	      easing: "easeOutExpo",
+	      duration: 200,
+	      offset: '-=775',
+	      delay: function (el, i) {
+	        return 10 * (i + 1);
+	      },
+	      complete: function () {
+	        // Show the text after the animation completes
+	        textWrapper.style.opacity = 1;
+	      }
+	    }).add({
+	      targets: '.ml11',
+	      opacity: 0,
+	      duration: 1000,
+	      easing: "easeOutExpo",
+	      delay: 1000
+	    });
+
 	</script>
 </body>
 </html>
