@@ -19,7 +19,7 @@
 			font-weight: 700;
 			padding-top: 100px;
 			padding-bottom:10px;
-			font-size: 4.2em;
+			font-size: 3.5em;
 		}
 		.intro .text-wrapper {
 		  opacity: 0;
@@ -55,52 +55,51 @@
 		  line-height: 1em;
 		}
 
+		#background{
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			align-content: center;
+			color: #E9E9E9;
+			line-height: 70px;
+		}
+		#container2 {
+			margin-left: auto;
+			margin-right:auto;
+			padding-right:200px;
+			padding-left:200px;
+			padding-bottom:150px;
+
+		}
+
 		#small-details{
 			font-weight:300;
 			color: gray;
 			padding-bottom :5px;
-
 /*			font-size: em;*/
 		}
 		#description{
 			font-family: 'Inter', sans-serif;
-			padding-right: 80px;
+/*			padding-right: 70px;*/
 			color: black;
 			font-weight: 300;
 			line-height:36px;
 /*			padding-left: 50px;*/
-		}		
-		#container2{
-			display:flex;
-			flex-direction: row;
-			padding-left: 125px;
-			padding-bottom: 200px;
-			color: #E9E9E9;
-			line-height: 70px;
-			font-family: 'Syne', sans-serif;
-			max-width: 1300px;
 		}
+		#info{
+/*			padding-right:120px;*/
+		}		
 		#about-img{
-			height: 400px;
+			height: 300px;
 			width: auto;
-			padding-right: 85px;
-			padding-top: 0px;
-/*			padding-top:20px;*/
 		}
 
 		#projects{
 			display:flex;
 			flex-wrap: wrap;
 			justify-content: center;
-			max-width:1400px;
-		}
-		#container4{
-			justify-content: center;
-			font-family: 'Syne', sans-serif;
-			height: 50px;
-			line-height: 50px;
-			font-size: 0.8em;
-			text-align: center;
+			align-items: center;
 		}
 		.thumbnails{
 			height: 100%;
@@ -176,37 +175,45 @@
 		  font-size: 16px;
 		  cursor: pointer;
 		}
-		@media (max-width: 1200px ) {
-
-
+		@media (min-width: 1400px) {
 			#container2 {
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				padding-left: 125px;
-				padding-bottom: 75px;
-				color: #E9E9E9;
-				line-height: 70px;
-				font-family: 'Syne', sans-serif;
-			}
-			#intro {
-				padding: 0px;
-				text-align: left;
-			}
+				margin-left: auto;
+				margin-right:auto;
 
-			#description {
-				padding: 0px;
-				text-align: left;
 			}
-
 			#projects {
 				padding: 0;
+				align-items: center;
+				padding-right: 100px;
+				padding-left:100px;
 			}
-/*			#logo{
-				padding-right:50px;
-			}*/
-		}
 
+			#about-img{
+				padding-left:20px;
+			}
+			.image-button{
+				width: 600px;
+				height: auto;
+			}
+			#description{
+				padding:0px;
+			}
+
+
+		}
+		@media (max-width: 991px) {
+			#background{
+				display:flex;
+				flex-direction:column;
+			}
+			#container2{
+				padding-right: 75px;
+				padding-left:75px;
+			}
+			#info{
+			padding: 0px;
+			font-size:0.5em;
+		}
 	</style>
 </head>
 <body>
@@ -226,20 +233,23 @@
 	</div>
 
 	<div id="container2">
-		<div id = "intro">
-			<p class ="intro">
-				<span class="text-wrapper">
-					<span class="line line1"></span>
-					<span class="letters">Hi I<span class="punctuation">'</span>m Ellen Ong!</span>
-				</span>
-			</p>
-			<h6 id ="small-details" class ="slide-right">Based in Los Angeles | UX Designer @ Tutoria</span></h6>
-			<h3 id = "description" class ="slide-right">UX designer by day, podcast enthusiast by night, & research junkie all the time.</h3>
-		</div>
-		<div>
-			<img id = "about-img" class = "slide-left" src ="img/me3.png" alt="about">
+		<div id="background">
+			<div id = "info">
+				<p class ="intro">
+					<span class="text-wrapper">
+						<span class="line line1"></span>
+						<span class="letters">Hi I<span class="punctuation">'</span>m Ellen Ong!</span>
+					</span>
+				</p>
+				<h6 id ="small-details" class ="slide-right">Based in Los Angeles | UX Designer @ Tutoria</h6>
+				<h5 id = "description" class ="slide-right">UX designer by day, podcast enthusiast by night, & research junkie all the time.</h5>
+			</div>
+			<div id = "memoji">
+				<img id = "about-img" class = "slide-left" src ="img/me3.png" alt="about">
+			</div>
 		</div>
 	</div>
+
 	<div id ="projects">
 		<div class="image-button">
 		    <a href="roomi">
@@ -279,11 +289,17 @@
 			</div>
 		</div>
 
-		<div class="image-button">
-			<a>
-				 <img class ="thumbnails" src ="img/coming.png" alt="your-image-alt-text-here">
-				 <span class="button-text">More coming soon</span>
-			</a>
+		<div class= "image-button">
+				<a href = "lollaland">
+				 	<img class ="thumbnails" src ="img/lollacup2.png" alt="your-image-alt-text-here">
+				  	<span class="button-text">Miscellaneous Designs</span>
+			  	</a>
+			    <div class = "project-title">
+				    <h4>UI Designs</h4>
+				    <div class ="project-description">
+				    	<h6>Playground of UI designs.</h6>
+					</div>
+				</div>
 		</div>
 <!-- 		<div class="image-button">
 			<a href = "lollaland.html">

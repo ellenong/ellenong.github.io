@@ -32,7 +32,7 @@ h1, h2, h3, h4, h5, h6{
 #container1{
 	display: flex;
 	flex-direction: row;
-	align-items:center;
+	align-items: center;
 	padding: 75px;
 	padding-bottom: 15px;
 	text-align:center;
@@ -50,7 +50,7 @@ h1, h2, h3, h4, h5, h6{
 	display: flex;
 	font-family: 'Inter', sans-serif;
 	text-decoration: none;
-		font-size:0.8em;
+	font-size:0.8em;
 }
 
 #navbar li{
@@ -107,7 +107,7 @@ h1, h2, h3, h4, h5, h6{
 /*		color: #AAC5AA;*/
 	color:black;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
 	#logo{
 		height: 100px;
 		width:auto;
