@@ -63,9 +63,9 @@ h1, h2, h3, h4, h5, h6{
 	padding-right: 0px;
 }
 .nav{
-	color: gray;
+	color: lightgray;
 	font-size: 1.2em;
-	font-weight: 300;
+	font-weight: 400;
 	text-decoration: none;
 }
 .nav:hover{
